@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🪴 Riley's Website",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "rileyjameson.github.io/quartz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
@@ -30,26 +30,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#FFD7AA", // Warm golden sunset background
+          lightgray: "#FFB984", // Softer peach-orange glow
+          gray: "#B69CA5", // Muted lavender-gray for contrast
+          darkgray: "#4E4E4E", // Deep neutral gray for balance
+          dark: "#2B2B2B", // Dark contrast for depth
+          secondary: "#372772", // Rich twilight blue (sky transitioning to night)
+          tertiary: "#D4AA36", // La La Land yellow accent (from Mia’s dress)
+          highlight: "rgba(212, 170, 54, 0.15)", // Subtle gold glow
+          textHighlight: "#d4aa3688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#201A4E", // Darker deep night sky (muted twilight blue)
+          lightgray: "#2B2366", // Slightly lighter blue-violet for subtle contrast
+          gray: "#5F64C2", // Mid-tone cool blue (from cityscape)
+          darkgray: "#B5A8FF", // Muted lavender highlight
+          dark: "#EDE6FF", // Soft, dreamy light purple for contrast
+          secondary: "#D4AA36", // Rich twilight purple (dominant color in the scene)
+          tertiary: "#B083D8", // La La Land signature yellow accent (from the dress)
+          highlight: "rgba(223, 195, 84, 0.15)", // Soft golden glow
+          textHighlight: "#d4aa3688",
         },
       },
     },
