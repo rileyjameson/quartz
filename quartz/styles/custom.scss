@@ -1,3 +1,13 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+/* Hide date specifically on the homepage */
+body[data-slug="index"] .content-meta{
+    display: none !important;
+}
+
+/* Hide article-title on the homepage */
+body[data-slug="index"] .article-title {
+    display: none !important;
+}

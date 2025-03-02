@@ -30,26 +30,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#FFD7AA", // Warm golden sunset background
-          lightgray: "#FFB984", // Softer peach-orange glow
-          gray: "#B69CA5", // Muted lavender-gray for contrast
-          darkgray: "#4E4E4E", // Deep neutral gray for balance
-          dark: "#2B2B2B", // Dark contrast for depth
-          secondary: "#372772", // Rich twilight blue (sky transitioning to night)
-          tertiary: "#D4AA36", // La La Land yellow accent (from Mia’s dress)
-          highlight: "rgba(212, 170, 54, 0.15)", // Subtle gold glow
-          textHighlight: "#d4aa3688",
+          light: "#f1efe7", // Clean, warm white background
+          lightgray: "#e5e3e1", // Subtle gray with warm undertones
+          gray: "#b8b4b0", // Medium warm gray
+          darkgray: "#4a4a4a", // Deep readable gray
+          dark: "#2b2b2b", // Near black
+          secondary: "#77b5a7", // Muted sage green
+          tertiary: "#f28482", // Soft coral accent
+          highlight: "rgba(132, 165, 157, 0.15)", // Subtle sage highlight
+          textHighlight: "rgba(132, 165, 157, 0.4)", // Stronger sage highlight
         },
         darkMode: {
-          light: "#201A4E", // Darker deep night sky (muted twilight blue)
-          lightgray: "#2B2366", // Slightly lighter blue-violet for subtle contrast
-          gray: "#5F64C2", // Mid-tone cool blue (from cityscape)
-          darkgray: "#B5A8FF", // Muted lavender highlight
-          dark: "#EDE6FF", // Soft, dreamy light purple for contrast
-          secondary: "#D4AA36", // Rich twilight purple (dominant color in the scene)
-          tertiary: "#B083D8", // La La Land signature yellow accent (from the dress)
-          highlight: "rgba(223, 195, 84, 0.15)", // Soft golden glow
-          textHighlight: "#d4aa3688",
+          light: "#262624", // Deep space background
+          lightgray: "#242428", // Slightly lighter background
+          gray: "#5e5e65", // Mid-tone neutral
+          darkgray: "#d4d4d4", // Light readable gray
+          dark: "#ebebec", // Near white
+          secondary: "#77b5a7", // Muted sage green (consistent with light)
+          tertiary: "#f28482", // Soft coral (consistent with light)
+          highlight: "rgba(132, 165, 157, 0.15)", // Subtle sage highlight
+          textHighlight: "rgba(132, 165, 157, 0.4)", // Stronger sage highlight
         },
       },
     },
