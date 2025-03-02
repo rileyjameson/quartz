@@ -12,10 +12,10 @@
       transition: transform 300ms ease-in-out;
     }
 
-    // Sticky top bar (stays in place when scrolling down on mobile).
+    // Top bar styling for mobile (no longer sticky)
     .sidebar.left:has(.explorer) {
       box-sizing: border-box;
-      position: sticky;
+      position: initial;
       background-color: var(--light);
     }
 
