@@ -30,26 +30,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f1efe7", // Clean, warm white background
-          lightgray: "#e5e3e1", // Subtle gray with warm undertones
-          gray: "#b8b4b0", // Medium warm gray
-          darkgray: "#4a4a4a", // Deep readable gray
-          dark: "#2b2b2b", // Near black
-          secondary: "#77b5a7", // Muted sage green
-          tertiary: "#f28482", // Soft coral accent
-          highlight: "rgba(132, 165, 157, 0.15)", // Subtle sage highlight
-          textHighlight: "rgba(132, 165, 157, 0.4)", // Stronger sage highlight
+          light: "transparent", // Let the sunrise gradient show through
+          lightgray: "rgba(229, 227, 225, 0.7)", // Semi-transparent warm gray
+          gray: "#7c7975", // Warm gray for standard text
+          darkgray: "#3a3a3a", // Deep gray for headings
+          dark: "#1a1a1a", // Nearly black for maximum contrast
+          secondary: "#4a7d9c", // Sky blue that complements the sunrise gradient
+          tertiary: "#d25c46", // Warm terracotta that echoes sunset tones
+          highlight: "rgba(74, 125, 156, 0.2)", // Light blue highlight
+          textHighlight: "rgba(74, 125, 156, 0.5)", // More visible text highlight
         },
         darkMode: {
-          light: "#262624", // Deep space background
-          lightgray: "#242428", // Slightly lighter background
-          gray: "#5e5e65", // Mid-tone neutral
-          darkgray: "#d4d4d4", // Light readable gray
-          dark: "#ebebec", // Near white
-          secondary: "#77b5a7", // Muted sage green (consistent with light)
-          tertiary: "#f28482", // Soft coral (consistent with light)
-          highlight: "rgba(132, 165, 157, 0.15)", // Subtle sage highlight
-          textHighlight: "rgba(132, 165, 157, 0.4)", // Stronger sage highlight
+          light: "transparent", // Let the sunset gradient show through
+          lightgray: "rgba(36, 36, 40, 0.7)", // Semi-transparent dark gray
+          gray: "#b8b8c0", // Light gray for standard text
+          darkgray: "#e8e8e8", // Very light gray for headings
+          dark: "#ffffff", // Pure white for maximum contrast
+          secondary: "#84b1d9", // Bright sky blue to contrast with the deep sunset
+          tertiary: "#ff9d7a", // Bright orange-coral that pops against dark blues
+          highlight: "rgba(132, 177, 217, 0.25)", // Subtle blue highlight
+          textHighlight: "rgba(132, 177, 217, 0.6)", // More visible text highlight
         },
       },
     },
