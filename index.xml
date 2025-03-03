@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>🪴 Riley&#039;s Website</title>
+      <title>🪴 Riley&#039;s Space</title>
       <link>https://rileyjameson.com</link>
-      <description>Last 10 notes on 🪴 Riley&#039;s Website</description>
+      <description>Last 10 notes on 🪴 Riley&#039;s Space</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>Testing Obsidian Woo</title>
     <link>https://rileyjameson.com/Testing-Obsidian-Woo</link>
     <guid>https://rileyjameson.com/Testing-Obsidian-Woo</guid>
     <description>Here is a test page using Obsidian Test Test Test Test test test test added something test Here is a test page using Obsidian Test Test Test Test test test test added something test Here ...</description>
-    <pubDate>Sun, 02 Mar 2025 23:56:32 GMT</pubDate>
+    <pubDate>Mon, 03 Mar 2025 01:20:15 GMT</pubDate>
   </item><item>
     <title>Riley&#039;s Digital Space</title>
     <link>https://rileyjameson.com/</link>
     <guid>https://rileyjameson.com/</guid>
     <description>A minimalist home for evolving ideas.</description>
-    <pubDate>Sun, 02 Mar 2025 23:56:32 GMT</pubDate>
+    <pubDate>Mon, 03 Mar 2025 01:20:15 GMT</pubDate>
   </item>
     </channel>
   </rss>
