@@ -25,8 +25,11 @@
   right: -700px;
   width: 1600px;
   height: 1400px;
+  // Using revised SVG filter
   filter: url(#wind);
-  animation: billow 8s ease-in-out infinite;
+  transform-origin: bottom center;
+  // Changed to more natural timing and smaller movements
+  animation: gentleSway 12s ease-in-out infinite;
   opacity: 0.1;
   background-image: none;
   
@@ -52,21 +55,22 @@
   }
 }
 
-@keyframes billow {
+// Renamed animation with more subtle, natural movements
+@keyframes gentleSway {
   0% {
     transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
   }
 
   25% {
-    transform: perspective(400px) rotateX(1deg) rotateY(2deg) scale(1.02);
+    transform: perspective(400px) rotateX(0.5deg) rotateY(1deg) scale(1.01);
   }
 
   50% {
-    transform: perspective(400px) rotateX(-4deg) rotateY(-2deg) scale(0.97);
+    transform: perspective(400px) rotateX(-1deg) rotateY(-1.5deg) scale(0.99);
   }
 
   75% {
-    transform: perspective(400px) rotateX(1deg) rotateY(-1deg) scale(1.04);
+    transform: perspective(400px) rotateX(0.5deg) rotateY(-0.5deg) scale(1.02);
   }
 
   100% {
@@ -76,7 +80,7 @@
 
 /* This helps ensure the animation doesn't run on mobile at all */
 @media (max-width: 768px) {
-  @keyframes billow {
+  @keyframes gentleSway {
     0%, 100% {
       transform: none;
     }
