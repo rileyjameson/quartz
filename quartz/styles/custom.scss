@@ -12,33 +12,33 @@ body[data-slug="index"] .article-title {
     display: none !important;
 }
 
-/* Custom CSS for Quartz theme with sunrise/sunset gradients */
+/* Custom CSS for Quartz theme with optimized gradients for readability */
 
-/* Light mode - Sunrise gradient (based on the first image) */
+/* Light mode - Very subtle muted yellow gradient */
 :root {
-    --gradient-light: linear-gradient(to bottom, #a7c7e7 0%, #c4d7ed 20%, #e5dbd1 50%, #f5dbb8 75%, #ffd89b 100%);
-  }
-  
-  /* Apply the light gradient by default */
-  body {
-    background: var(--gradient-light);
-    background-attachment: fixed;
-    transition: background 0.5s ease;
-  }
-  
-  /* Dark mode - Target the saved-theme attribute that your Quartz uses */
-  html[saved-theme="dark"] {
-    --gradient-dark: linear-gradient(to bottom, #041e42 0%, #0f2a63 30%, #6b3654 70%, #e05628 95%, #ff6a33 100%);
-  }
-  
-  /* Apply the dark gradient when dark mode is active */
-  html[saved-theme="dark"] body {
-    background: var(--gradient-dark);
-    background-attachment: fixed;
-  }
-  
-  /* Remove any other styling that might interfere with content appearance */
-  #quartz-body, .center, .sidebar, article, .page-header, .content, .popover-hint {
-    /* Ensure these containers remain with their default styling */
-    background: transparent;
-  }
+  --gradient-light: linear-gradient(to top, #f0e8c8 0%, #f2ebcf 30%, #f4ecd5 60%, #f5eeda 100%);
+}
+
+/* Apply the light gradient by default */
+body {
+  background: var(--gradient-light);
+  background-attachment: fixed;
+  transition: background 0.5s ease;
+}
+
+/* Dark mode - Deeper, richer blue to purple gradient */
+html[saved-theme="dark"] {
+  --gradient-dark: linear-gradient(to bottom, #05091a 0%, #0a0f2f 40%, #190b38 80%, #240b38 100%);
+}
+
+/* Apply the dark gradient when dark mode is active */
+html[saved-theme="dark"] body {
+  background: var(--gradient-dark);
+  background-attachment: fixed;
+}
+
+/* Remove any other styling that might interfere with content appearance */
+#quartz-body, .center, .sidebar, article, .page-header, .content, .popover-hint {
+  /* Ensure these containers remain with their default styling */
+  background: transparent;
+}

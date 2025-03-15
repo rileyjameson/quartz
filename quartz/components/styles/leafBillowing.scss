@@ -19,18 +19,15 @@
 
 #leaves {
   position: absolute;
-  background-size: cover;
+  background-size: contain; /* Changed from cover to contain */
   background-repeat: no-repeat;
-  bottom: -130px;
-  right: -700px;
-  width: 1600px;
-  height: 1400px;
-  // Using revised SVG filter
-  filter: url(#wind);
-  transform-origin: bottom center;
-  // Changed to more natural timing and smaller movements
-  animation: gentleSway 12s ease-in-out infinite;
-  opacity: 0.1;
+  background-position: bottom right; /* Added to position the image */
+  bottom: -50px; /* Changed from -130px for higher positioning */
+  right: -350px; /* Changed from -700px to tuck it more toward the right */
+  width: 800px; /* Reduced from 1600px to make it smaller */
+  height: 700px; /* Reduced from 1400px to make it smaller */
+  /* Removed filter, animation and transform-origin for static display */
+  opacity: 0.08; /* Slightly reduced from 0.1 for better readability */
   background-image: none;
   
   @media (min-width: 769px) {
@@ -42,47 +39,7 @@
   @media (max-width: 768px) {
     display: none !important;
     background-image: none !important;
-    animation: none !important;
   }
 }
 
-/* Make sure the SVG filter is also disabled on mobile */
-@media (max-width: 768px) {
-  svg defs filter#wind,
-  [filter="url(#wind)"] {
-    display: none !important;
-    animation: none !important;
-  }
-}
-
-// Renamed animation with more subtle, natural movements
-@keyframes gentleSway {
-  0% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
-  }
-
-  25% {
-    transform: perspective(400px) rotateX(0.5deg) rotateY(1deg) scale(1.01);
-  }
-
-  50% {
-    transform: perspective(400px) rotateX(-1deg) rotateY(-1.5deg) scale(0.99);
-  }
-
-  75% {
-    transform: perspective(400px) rotateX(0.5deg) rotateY(-0.5deg) scale(1.02);
-  }
-
-  100% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
-  }
-}
-
-/* This helps ensure the animation doesn't run on mobile at all */
-@media (max-width: 768px) {
-  @keyframes gentleSway {
-    0%, 100% {
-      transform: none;
-    }
-  }
-}
+/* Removed SVG filter, keyframes, and animation code as the palm tree is now static */
